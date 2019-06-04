@@ -7,6 +7,7 @@ const connection = mysql.createConnection({
   password: "535f5494",
   database: "heroku_3b2e5fa92fe156f"
 });
+// ideally I would use the separate file for keeping this secret
 
 connection.connect(err => {
   if (err) {

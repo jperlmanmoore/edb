@@ -2,10 +2,21 @@ body, html {
     height: 100%
 }
 
-.bg {
-   background-image: url("../img/background.jpg");
+/* .bg {
+   background-image: url("./img/background.jpg");
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
    background: cover; 
+} */
+
+h1 {
+    color: rgb(206, 23, 17);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder
+}
+
+h3, ul, form {
+    color: rgb(68, 55, 55);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

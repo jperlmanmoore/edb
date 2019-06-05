@@ -22,8 +22,11 @@ const routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
 
-app.use(timeout(15000));
+app.use(timeOut(45000));
 app.use(haltOnTimedout);
+
+var timeOut = set timeOut(function() {
+  console.log("timeout")}, 45000);
 
 function haltOnTimedout(req, res, next) {
     if (!req.timedout) next();

@@ -5,7 +5,8 @@ const connection = mysql.createConnection({
   port: 3306,
   user: "b2ec77dbeebfd3",
   password: "535f5494",
-  database: "heroku_3b2e5fa92fe156f"
+  database: "heroku_3b2e5fa92fe156f", 
+  reconnect: true
 });
 // ideally I would use the separate file for keeping this secret
 

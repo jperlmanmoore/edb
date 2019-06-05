@@ -12,9 +12,13 @@ router.get("/", function(req, res) {
       burgers: data
     };
     console.log(hbsObject);
-    res.redirect(hbsObject, "/index");
+    res.render("index", hbsObject);
   });
 });
+
+router.get("/", function(req, res) {
+    res.render("/index");
+  });
 
 router.post("/api/brgrs/", function(req, res) {
   brgr.create([

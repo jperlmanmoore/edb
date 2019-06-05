@@ -16,10 +16,6 @@ router.get("/", function(req, res) {
   });
 });
 
-router.get("/", function(req, res) {
-    res.render("/index");
-  });
-
 router.post("/api/brgrs/", function(req, res) {
   brgr.create([
     "burger_name"

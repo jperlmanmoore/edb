@@ -52,4 +52,6 @@ $(function() {
     //     }
     //   );
     // });
+
+    // I spend a lot of time working on figuring out if I could get the app to work on Heroku, I just didn't finish a delete burger part.
   });

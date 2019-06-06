@@ -2,16 +2,10 @@ body, html {
     height: 100%
 }
 
-.bg {
-   background-image: url("../img/background.jpg");
-   height: 50%;
-   width: 100%;
-   background-position: center;
-   background-repeat: no-repeat;
-   background: cover; 
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-h3, form {
+h3, form, label {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 

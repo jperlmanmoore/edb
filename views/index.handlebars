@@ -1,53 +1,41 @@
 <div class="bg"></div>
 
-<h1>EAT-DA-BURGER</h1>
+
 
 <div class="containter">
-  
+  <div class="row">
+    <div class="col l1">
+    </div>
+
+    <div class="col l7">
+      <h1>EAT-DA-BURGER</h1>
       <h3 class="red-text text-darken-4">YUMMY!</h3>
-      
       <ul>
-      {{#each burgers}}
-      {{#unless devoured}}
-      {{> burgers/burger-devour devoured=false}}
-      {{/unless}}
-      {{/each}}
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-devour devoured=false}}
+        {{/unless}}
+        {{/each}}
       </ul>
-
-<br>
-<br>
-    
-  
-    <form class="create-burger">
-      <div class="form-group">
-        <label for="burg">Burger Name:</label>
-        <input type="text" id="burg" name="burger_name">
-      </div>
-      <button class="btn-flat" type="submit">Add Burger</button>
-    </form>
-
-<br>
-<br>
-
-
-
- 
-        <h3 class="red-text text-darken-4">MMM.... THAT WAS SO GOOD!</h3>
-
-        <ul>
+      <br>
+      <form class="create-burger">
+        <div class="form-group">
+          <label for="burg">Burger Name:</label>
+          <input type="text" id="burg" name="burger_name">
+        </div>
+        <button class="btn-flat" type="submit">Add Burger</button>
+      </form>
+      <br>
+      <h3 class="red-text text-darken-4">MMM.... THAT WAS SO GOOD!</h3>
+      <ul>
         {{#each burgers}}
         {{#if devoured}}
         {{> burgers/burger-devour devoured=true}}
         {{/if}}
         {{/each}}
-        <ul>
-     
-
+      <ul>
+    </div>
   </div>
-
-
+  <div class="col l4">
+  </div>
 </div>
-
-
-
-

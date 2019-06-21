@@ -1,7 +1,7 @@
-body, html {
+body {
     height: 100%;
     background-image: url("../img/burger-close-up-fast-food-103886.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /* margin-left: 50px;
     margin-right: 50px; */
 }
@@ -9,7 +9,11 @@ body, html {
 h1, ul, li, h3, form, label, button, input {
     font-family: 'Montserrat', sans-serif;
     align-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+}
+
+create-burger {
+    max-width: 250px;
 }
 

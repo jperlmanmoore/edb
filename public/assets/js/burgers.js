@@ -48,7 +48,7 @@ $(function () {
     event.preventDefault();
     var id = $(this).data("id");
     console.log(this)
-    $.ajax('/api/brgr/' + id, {
+    $.ajax('/api/brgrs/' + id, {
       type: "DELETE"
     }).then(
       function () {

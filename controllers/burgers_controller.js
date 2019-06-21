@@ -47,7 +47,7 @@ router.put("/api/brgrs/:id", function(req, res) {
 });
 
 router.delete("/api/brgrs/:id", (req, res) => {
-  var condition = 'id = ' + req.body.id;
+  var condition = 'id = ' + req.params.id;
 
   brgr.delete(condition, function(result) {
     if (result.affectedRows == 0) {

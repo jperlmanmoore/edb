@@ -1,0 +1,16 @@
+version: '3.1'
+services:
+  client:
+    image: mysql:latest
+    command: mysql -h mysql-server -u root -p
+    volumes:
+     - ${PWD_FOLDER}:/host
+networks:
+  default:
+    external:
+      name: ga-tech
+
+# CLI Access:
+# docker-compose run --rm mysql-server mysql -h mysql-server -u root -p
+# PWD_FOLDER=[script folder here] docker-compose -f client-docker-compose.yml run client
+# from mysql >  source ./host/[script_file.sql]

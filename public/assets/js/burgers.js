@@ -24,14 +24,14 @@ $(function () {
   $(".create-burger").on("submit", function (event) {
     event.preventDefault();
 
-    if (burger_name != "") {
+
+    if ("burger_name" != "") {
     var newBurger = {
       burger_name: $("#burg").val().trim(),
       devoured: false
     };
   };
 
-    
       $.ajax("/api/brgrs", {
         type: "POST",
         data: newBurger

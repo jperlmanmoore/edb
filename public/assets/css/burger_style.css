@@ -1,13 +1,15 @@
 body, html {
     height: 100%;
     background-image: url("../img/burger-close-up-fast-food-103886.jpg");
-    /* background-repeat: no-repeat; */
-    margin-left: 50px;
-    margin-right: 50px;
+    background-repeat: no-repeat;
+    /* margin-left: 50px;
+    margin-right: 50px; */
 }
 
 h1, ul, li, h3, form, label, button, input {
     font-family: 'Montserrat', sans-serif;
-    align-content: center
+    align-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 

@@ -1,7 +1,7 @@
 <ul>
 	{{burger_name}}
 	{{#unless devoured}}
-	<button class="devourBurger" data-id="{{id}}" data-newdevour="{{devoured}}">
+	<button class="devourBurger btn-flat" data-id="{{id}}" data-newdevour="{{devoured}}">
 		devour
 	</button>
 	{{/unless}}
@@ -9,7 +9,7 @@
 
 <ul>
 	{{#if devoured}}
-	<button class="deleteBurger" data-id="{{id}}">
+	<button class="deleteBurger btn-flat" data-id="{{id}}">
 		delete
 	</button>
 	{{/if}}

@@ -1,18 +1,13 @@
 body, html {
     height: 100%;
     background-image: url("../img/burger-close-up-fast-food-103886.jpg");
+    /* background-repeat: no-repeat; */
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    align-content: center
-}
-h3, form, label {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h1, ul, li, h3, form, label, button, input {
+    font-family: 'Montserrat', sans-serif;
     align-content: center
 }
 
-ul, li {
-    font-family: Arial, Helvetica, sans-serif;
-    align-content: center
-}
